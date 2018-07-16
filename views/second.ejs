@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <%= info[0].status %>
+
+  <h1>Step Three: You're Already There</h1>
+  <p> Now you can delete the secretcode from your Quora Profile. Your Quora Account is <%=info[0].status %>;
+  <p> Now you create your password or a P-Code. Your P-Code is something only you know. This is basically how we know no one is trying to steal your vote! </p>
+<p> You can use any password. It can be different than your Quora account and we encourage that it be different fron your Quroa account! </p>
+
+<form  action="/createpcode" method="post">
+  <input type="text" name="pcode" value="Create Password">
+  <textarea class="getrid" name="link" rows="8" cols="80"><%=info[0].link%></textarea>
+  <button type="submit" name="button">Click me Idiot!</button>
+</form>
+  </body>
+  <script type="text/javascript" src="/assets/list.js"> </script>
+
+</html>

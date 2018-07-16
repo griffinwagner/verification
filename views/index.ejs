@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/idontwannadothis.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+          <h1> Hello World! Welcome to QPCA! </h1>
+    </header>
+
+
+      </div>
+      <button type="button" name="button" class="signin">Sign In</button>
+        <h3> We want to make this super easy! </h3>
+        <p> This year, there are only three steps and they are super easy! No more messaging, delays, wait times, frustration. Just 3 steps! </p>
+        <ol>
+          <li> Put Your Secret Code In Your Quora Profile </li>
+          <li> Give us your Quora Profile Link. Please use the url address bar.</li>
+          <li> Create a Password (P-Code) that only you know. This is how we know we are talking to you!</li>
+        </ol>
+        <p> Yes! It is really that simple. No more messy registrations. All you need is your Quora profile link. It is literally that simple! </p>
+        <h2> Step 1: Put this code in the first line of your Quora bio </h2> <p> You can delete it in few seconds. </p>
+        <% var part1 = Math.random().toString(36).substring(7); %>
+        <% var part2 = Math.random().toString(36).substring(7); %>
+        <% var part3 = Math.random().toString(36).substring(3); %>
+        <% var total = part1 + part2 + part3 %>
+
+        <p> Copy this code to your Quora Profile: <%=total%></p>
+        <h2> Step 2: Give us your Quora Profile Link. </h2>
+        <p> Make sure to only use the link in the URL Address Bar on a web browser. Do not use "Share URL" or any QR.AE Link. Only use the url in the Address Bar on a web browser like Chrome or Safari. </p>
+        <form action="/getSecret" method="post">
+          <input type="text" name="link" value="Put Your Quora Profile Link Here">
+          <textarea class="secretcodeArea" name="secretcode" rows="8" cols="80"><%=total%></textarea>
+          <button type="submit" name="button"> Get Your Secret Code!</button>
+        </form>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+  </body>
+  <script type="text/javascript" src="/assets/list.js"> </script>
+
+</html>

@@ -1,0 +1,36 @@
+/* * {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+} */
+
+body {
+  background-color: #D4F7EC;
+}
+
+
+header {
+  background-color: #448D76;
+  padding-top:35px;
+  padding-bottom: 35px;
+}
+
+h1 {
+  color: #090934;
+  font-size: 5vh;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+}
+
+h2 {
+  color: #090934;
+  size: .5vh;
+  font-family: 'Patua One', cursive;
+  padding-top: 5vh;
+  padding-bottom: 1vh;
+}
+
+p {
+  size: .35vh;
+  font-family: 'Roboto', sans-serif;
+}
